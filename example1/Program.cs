@@ -10,50 +10,48 @@ namespace example1
             #region Task 1
             //Console.WriteLine("example1");
 
-            //double a, b, c;
-
             //Console.WriteLine("Print a: ");
-            //double.TryParse(Console.ReadLine(), out a);
+            //double.TryParse(Console.ReadLine(), out var a);
             //Console.WriteLine("Print b: ");
-            //double.TryParse(Console.ReadLine(), out b);
+            //double.TryParse(Console.ReadLine(), out var b);
             //Console.WriteLine("Print c: ");
-            //double.TryParse(Console.ReadLine(), out c);
+            //double.TryParse(Console.ReadLine(), out var c);
 
             //Console.WriteLine((a > Math.Abs(b - c) && (a < b + c)) ? "Can" : "Cannot");
             #endregion
 
             #region Task 2
 
-            //int n, m;
-            //Console.WriteLine("Print n: ");
-            //int.TryParse(Console.ReadLine(), out n);
+            int n, m;
+            Console.WriteLine("Print n: ");
+            int.TryParse(Console.ReadLine(), out n);
 
-            //Console.WriteLine("Print m: ");
-            //int.TryParse(Console.ReadLine(), out m);
+            Console.WriteLine("Print m: ");
+            int.TryParse(Console.ReadLine(), out m);
 
-            //// Рекурсия
-            //Console.WriteLine($"(R) A(n, m) = {Fact(n) / (Fact(n - m))}");
-            //// Loop
-            //Console.WriteLine($"(L) A(n, m) = {Loop(n, m)}");
+            // Рекурсия
+            Console.WriteLine($"(R) A(n, m) = {Fact(n) / (Fact(n - m))}");
+            // Loop
+            Console.WriteLine($"(L) A(n, m) = {Loop(n, m)}");
             #endregion
 
             #region Task 3
 
-            Console.WriteLine("Print accuracy: ");
-            long.TryParse(Console.ReadLine(), out var acc);
-            acc = long.MaxValue;
+            //Console.WriteLine("Print accuracy: ");
+            //long.TryParse(Console.ReadLine(), out var acc);
+            //acc = long.MaxValue;
 
-            long i = 1;
-            double pi = 0;
-            long x = 1;
-            while (i != acc)
-            {
-                pi += 1.0 / (x * (x + 2));
-                x += 4;
+            //long i = 1;
+            //double pi = 0;
+            //long x = 1;
+            //while (i != acc)
+            //{
+            //    pi += 1.0 / (x * (x + 2));
+            //    x += 4;
 
-                Console.WriteLine($"Pi = {pi * 8}");
-                i++;
-            }
+            //    Console.WriteLine($"Pi = {pi * 8}");
+            //    i++;
+            //}
 
 
             #endregion
