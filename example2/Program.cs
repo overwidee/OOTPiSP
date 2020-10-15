@@ -11,18 +11,18 @@ namespace example2
 
             #region Task 1
 
-            //Console.WriteLine("Print n: ");
-
-            //int.TryParse(Console.ReadLine(), out var n);
-
-            //var array = new double[n];
-
-            //for (var i = 0; i < n; i++)
-            //{
-            //    double.TryParse(Console.ReadLine(), out array[i]);
-            //}
-
-            //Console.WriteLine($"Average: {array.Where((x, index) => index % 2 == 0).Average()}");
+            // Console.WriteLine("Print n: ");
+            //
+            // int.TryParse(Console.ReadLine(), out var n);
+            //
+            // var array = new double[n];
+            //
+            // for (var i = 0; i < n; i++)
+            // {
+            //     double.TryParse(Console.ReadLine(), out array[i]);
+            // }
+            //
+            // Console.WriteLine($"Average: {array.Where((x, index) => index % 2 == 0).Average()}");
 
             #endregion
 
@@ -35,9 +35,9 @@ namespace example2
                 {1, 2, 3, 4},
                 {1, 2, 3, 4}
             };
-
+            
             var tArr = new double[arr.GetLength(0), arr.GetLength(1)];
-
+            
             Console.WriteLine("Old array\n");
             for (var i = 0; i < arr.GetLength(0); i++)
             {
@@ -48,7 +48,7 @@ namespace example2
                 }
                 Console.WriteLine("\n");
             }
-
+            
             Console.WriteLine("New array\n");
             for (var i = 0; i < tArr.GetLength(0); i++)
             {
@@ -60,6 +60,7 @@ namespace example2
             }
 
             #endregion
+            
             Console.ReadLine();
         }
     }
