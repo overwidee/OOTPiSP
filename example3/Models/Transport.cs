@@ -2,23 +2,13 @@
 {
     public class Transport
     {
-        public Transport()
-        {
-            
-        }
-
-        public Transport(string name, TransportType type, string number, string model)
-        {
-            Name = name;
-            TransportType = type;
-            Number = number;
-            Model = model;
-        }
-        
-        public string Name { get; }
-        public TransportType TransportType { get; }
-        public string Number { get; }
-        public string Model { get; }
+        public string Name { get; set; }
+        public TransportType TransportType { get; set; }
+        public string Number { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public bool IsBusy => BusyBy != null;
+        public Employee BusyBy { get; set; }
     }
 
     public enum TransportType
