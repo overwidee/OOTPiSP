@@ -7,6 +7,7 @@ namespace example3
 {
     class Program
     {
+        // для выполнения определенный заданий (Task1, Task2) - раскомментить код
         static void Main(string[] args)
         {
             #region Task1
@@ -57,45 +58,44 @@ namespace example3
             #region Parking
 
             // парковка
-            var parkingTechnics = new ParkingTechnics(new[]
+            var parkingTechnics = new ParkingTechnics(new Transport[]
             {
-                new Transport()
+                new FreightTransport()
                 {
                     Model = "ModelTransport",
                     Name = "NameTransport",
                     Number = "2234-gh",
                     Year = 2012,
-                    TransportType = TransportType.Tractor,
                     BusyBy = null
                 },
-                new Transport()
+                new Agricultural()
                 {
                     Model = "ModelTransport2",
                     Name = "NameTransport2",
                     Number = "1134-gh",
-                    Year = 2000,
-                    TransportType = TransportType.Tractor,
+                    Year = 1980,
                     BusyBy = null
                 },
-                new Transport()
+                new FreightTransport()
                 {
                     Model = "ModelTransport3",
                     Name = "NameTransport3",
                     Number = "2565-gh",
                     Year = 2003,
-                    TransportType = TransportType.Tractor,
                     BusyBy = null
                 }
             });
             
-            parkingTechnics.AddTransport(new Transport()
+            parkingTechnics.AddTransport(new Agricultural()
             {
                 Model = "Model999",
                 Name = "NameSuper",
                 Number = "4500-po",
-                TransportType = TransportType.Car,
                 BusyBy = null
             });
+            
+            // вывод транпорта
+            parkingTechnics.PrintAll();
 
             // занимаем для сотрудников
             parkingTechnics.GetTransportFor(employee, "2234-gh");

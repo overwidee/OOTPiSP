@@ -83,6 +83,14 @@ namespace example3.Models
         {
             return _transports.FirstOrDefault(x => x.BusyBy.GetUserNick() == emp.GetUserNick());
         }
+
+        public void PrintAll()
+        {
+            foreach (var transport in this)
+            {
+                Console.WriteLine(transport);
+            }
+        }
     }
 
     public class GrainHarvesting : List<GrainWorkModel>
