@@ -5,6 +5,7 @@ namespace example1
 {
     class Program
     {
+        // задания разбиты на regions, необходимое задание раскомментить
         static void Main(string[] args)
         {
             #region Task 1

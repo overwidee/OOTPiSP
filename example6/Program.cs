@@ -36,9 +36,9 @@ namespace example6
                 new Transfer(3300),
                 new Privilege(445)
             };
-
+            
             var sortList = incomes.OrderByDescending(x => ((ITax) x).GetTaxSum()).ToList();
-
+            
             foreach (var income in sortList)
             {
                 WriteLine($"{income.GetName()} - {Math.Round(((ITax)income).GetTaxSum(), 2)}");
